@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Analyzer</title>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+  <link rel="shortcut icon" href="./images/A.png" type="image/png">
+</head>
+<body>
+  <main class="search">
+    <header class="header">
+      <div class="logo"><a href="">NewsAnalyzer</a></div>
+      <div class="header__pages-switcher">
+        <a class="header__page-link header__page-link_active" href="">Главная</a>
+        <a class="header__page-link" href="">О проекте</a>
+      </div>
+    </header>
+    <div class="separator"></div>
+    <section class="search-section">
+      <h1 class="search-section__title title">Что в мире творится?</h1>
+      <p class="search-section__paragraph paragraph ">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
+      <div class="search-field">
+        <input class="search-field__input" type="text">
+        <button class="search-field__button">Искать</button>
+      </div>
+    </section>
+    <div class="preloader-container">
+      <i class="circle-preloader"></i>
+    </div>
+    <section class="about-author">
+      <img class="about-author__photo"></img>
+      <div class="about-author__text">
+        <h2 class="title_size_m about-author__title">Об авторе</h2>
+        <p class="paragraph about-author__pararaph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.
+          Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer__copyright"></div>
+    <nav class="footer__link-menu">
+      <a href="" class="footer__link">Главная</a>
+      <a href="" class="footer__link">О проекте</a>
+      <a href="" class="footer__link">Яндекс.Практикум</a>
+    </nav>
+    <div class="footer__social-media-items">
+      <a href="" class="footer__social-media-icon"></a>
+      <a href="" class="footer__social-media-icon"></a>
+    </div>
+  </footer>
+  <script src="<%= htmlWebpackPlugin.files.js %>"></script>
+</body>
+</html>
