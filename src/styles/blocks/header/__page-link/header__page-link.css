@@ -1,0 +1,28 @@
+@import url(./_active/header__page-link_active-white.css);
+@import url(./_active/header__page-link_active-black.css);
+
+.header__page-link {
+  margin-right: 34px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  /*background-color: #ffffff;
+  background-position: bottom;
+  background-size: 100% 1px;*/
+
+}
+
+.header__page-link:last-child {
+  margin-right: 0;
+}
+
+.header__page-link:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 420px) {
+  .header__page-link {
+    margin-right: 11px;
+  }
+}

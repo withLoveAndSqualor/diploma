@@ -1,0 +1,21 @@
+@import url(./__data/searched-word__data.css);
+@import url(./__title/searched-word__title.css);
+
+.searched-word {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .searched-word {
+    padding-top: 64px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .searched-word {
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
+}

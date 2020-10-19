@@ -1,0 +1,18 @@
+.search-section__container {
+  max-width: 608px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .search-section__container {
+    max-width: 452px;
+    padding-left: 16px;
+    padding-right: 18px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .search-section__container {
+    width: 90%;
+  }
+}

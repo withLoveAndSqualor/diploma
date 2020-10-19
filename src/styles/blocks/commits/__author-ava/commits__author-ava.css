@@ -1,0 +1,12 @@
+.commits__author-ava {
+  padding-right: 16px;
+  max-width: 64px;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  .commits__author-ava {
+    padding-right: 12px;
+  }
+}

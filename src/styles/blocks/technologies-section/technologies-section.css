@@ -1,0 +1,17 @@
+@import url(./__image/technologies-section__image.css);
+@import url(./__logo-container/technologies-section__logo-container.css);
+@import url(./__logo-item/technologies-section__logo-item_css.css);
+@import url(./__logo-item/technologies-section__logo-item_html.css);
+@import url(./__title-container/technologies-section__title-container.css);
+@import url(./__t-name/technologies-section__t-name.css);
+
+.technologies-section {
+  background-color: #f5f6f7;
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  .technologies-section {
+    flex-wrap: wrap;
+  }
+}

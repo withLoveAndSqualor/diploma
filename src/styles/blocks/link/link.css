@@ -1,0 +1,8 @@
+@import url(./_color/link_color_white.css);
+@import url(./_color/link_color_grey.css);
+@import url(./_color/link_color_grey-on-white.css);
+@import url(./_color/link_color_black.css);
+
+.link {
+  text-decoration: none;
+}

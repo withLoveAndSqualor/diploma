@@ -1,0 +1,27 @@
+@import url(./__data-title/analytics__data-title.css);
+@import url(./__day-amount/analytics__day-amount.css);
+@import url(./__day-date/analytics__day-date.css);
+@import url(./__day-scale/analytics__day-scale.css);
+@import url(./__day/analytics__day.css);
+@import url(./__fr-scale/analytics__fr-scale.css);
+@import url(./__mon-scale/analytics__mon-scale.css);
+@import url(./__sa-scale/analytics__sa-scale.css);
+@import url(./__scale/analytics__scale.css);
+@import url(./__scale100/analytics__scale100.css);
+@import url(./__scale25/analytics__scale25.css);
+@import url(./__scale50/analytics__scale50.css);
+@import url(./__scale75/analytics__scale75.css);
+@import url(./__scales-number/analytics__scales-number.css);
+@import url(./__su-scale/analytics__su-scale.css);
+@import url(./__table-title/analytics__table-title.css);
+@import url(./__thu-scale/analytics__thu-scale.css);
+@import url(./__title/analytics__title.css);
+@import url(./__thu-scale/analytics__thu-scale.css);
+@import url(./__title/analytics__title.css);
+@import url(./__tue-scale/analytics__tue-scale.css);
+@import url(./__wedn-scale/analytics__wedn-scale.css);
+
+.analytics {
+  background-color: #f5f6f7;
+  max-width: 1440px;
+}

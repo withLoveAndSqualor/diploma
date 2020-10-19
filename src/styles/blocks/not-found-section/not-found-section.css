@@ -1,0 +1,12 @@
+@import url(./__image/not-found-section__image.css);
+@import url(./__title/not-found-section__title.css);
+@import url(./__paragraph/not-found-section__paragraph.css);
+
+.not-found-section {
+  max-width: 1440px;
+  max-height: 374px;
+  background-color: #f5f6f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

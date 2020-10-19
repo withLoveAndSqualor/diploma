@@ -1,0 +1,26 @@
+.about-author__photo-container {
+  max-width: 464px;
+  min-width: 232px;
+  margin-right: 56px;
+}
+
+@media screen and (max-width: 850px) {
+  .about-author__photo-container {
+    margin-right: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-author__photo-container {
+    max-width: 232px;
+    min-width: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-author__photo-container {
+    max-width: 272px;
+    margin-right: 0;
+    padding-bottom: 24px;
+  }
+}

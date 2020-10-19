@@ -1,0 +1,17 @@
+.analytics__data-title {
+  width: 104px;
+}
+
+@media screen and (max-width: 768px) {
+  .analytics__data-title {
+    margin-right: 13px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .analytics__data-title {
+    margin-right: 16px;
+    max-width: 64px;
+    padding-right: 0;
+  }
+}

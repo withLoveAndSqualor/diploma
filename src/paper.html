@@ -3,11 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+  <meta name="description" content="Поиск новостей и их анализ">
+  <meta name="author" content="Кожевникова Мария">
+  <title>News Analyzer</title>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css%>">
+  <!--<link rel="stylesheet" href="./styles/index.css">-->
+  <link rel="apple-touch-icon" sizes="180x180" href="../src/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../src/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../src/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../src/images/favicon/site.webmanifest">
 </head>
-<body>
-  <h1>PAper</h1>
-  <script src="<%= htmlWebpackPlugin.files.js %>"></script>
+<body class="page">
+  <header class="header header_underline_on-white section_instrumental">
+    <div class="logo"><a class="link link_color_black" href="./index.html" >NewsAnalyzer</a></div>
+    <nav class="header__pages-switcher">
+      <div class="header__page-link "><a class="link link_color_grey-on-white" href="./index.html">Главная</a></div>
+      <div class="header__page-link"><a class="link link_color_grey-on-white" href="./about.html">О&nbsp;проекте</a></div>
+    </nav>
+  </header>
+  <section class="page-subtitle section_side-padding-104px">
+    <h3 class="page-subtitle__name">Главная&nbsp;<span class="page-subtitle__name_grey">/&nbsp;Аналитика</span></h3>
+  </section>
+  <section class="searched-word section_side-padding-104px">
+    <h2 class="searched-word__title title_40px">Вы спросили: «Путешествия»</h2>
+    <p class="searched-word__data">Новостей за неделю: <span class="marked">34 324</span></p>
+    <p class="searched-word__data">Упоминаний в загаловках: <span class="marked">235</span></p>
+  </section>
+  <section class="analytics section_main section_side-padding-104px">
+    <h3 class="analytics__title">Аналитика по дням</h3>
+    <div class="analytics__table-title">
+      <div class="analytics__data-title">Дата<br/>(август)</div>
+      <div class="analytics__amount-title">Кол-во упоминаний</div>
+    </div>
+    <div class="analytics__scale">
+      <p class="analytics__scales-number analytics__scale0">0</p>
+      <p class="analytics__scales-number analytics__scale25">25</p>
+      <p class="analytics__scales-number analytics__scale50">50</p>
+      <p class="analytics__scales-number analytics__scale75">75</p>
+      <p class="analytics__scales-number analytics__scale100">100</p>
+    </div>
+    <div class="analytics__days-container">
+      <div class="analytics__day ">
+        <div class="analytics__day-date analytics__data-title">19, пн</div>
+        <div class="analytics__day-scale analytics__mon-scale"><span class="analytics__day-amount">15</span></div>
+      </div>
+      <div class="analytics__day">
+        <div class="analytics__day-date analytics__data-title">20, вт</div>
+        <div class="analytics__day-scale analytics__tue-scale"><span class="analytics__day-amount">18</span></div>
+      </div>
+      <div class="analytics__day">
+        <div class="analytics__day-date analytics__data-title">21, ср</div>
+        <div class="analytics__day-scale analytics__wedn-scale"><span class="analytics__day-amount">11</span></div>
+      </div>
+      <div class="analytics__day">
+        <div class="analytics__day-date analytics__data-title">22, чт</div>
+        <div class="analytics__day-scale analytics__thu-scale"><span class="analytics__day-amount">39</span></div>
+      </div>
+      <div class="analytics__day">
+        <div class="analytics__day-date analytics__data-title">23, пт</div>
+        <div class="analytics__day-scale analytics__fr-scale"><span class="analytics__day-amount">45</span></div>
+      </div>
+      <div class="analytics__day">
+        <div class="analytics__day-date analytics__data-title">24, сб</div>
+        <div class="analytics__day-scale analytics__sa-scale"><span class="analytics__day-amount">73</span></div>
+      </div>
+      <div class="analytics__day">
+        <div class="analytics__day-date analytics__data-title">25, вс</div>
+        <div class="analytics__day-scale analytics__su-scale"><span class="analytics__day-amount">34</span></div>
+      </div>
+    </div>
+    <div class="analytics__scale">
+      <p class="analytics__scales-number analytics__scale0">0</p>
+      <p class="analytics__scales-number analytics__scale25">25</p>
+      <p class="analytics__scales-number analytics__scale50">50</p>
+      <p class="analytics__scales-number analytics__scale75">75</p>
+      <p class="analytics__scales-number analytics__scale100">100</p>
+    </div>
+  </section>
+  <footer class="footer section_instrumental">
+    <div class="footer__copyright">©2020  Mariia Kozhevnikova</div>
+    <nav class="footer__link-menu">
+      <a href="./index.html" class="footer__link link link_color_black">Главная</a>
+      <a href="./about.html" class="footer__link link link_color_black">О&nbsp;проекте</a>
+      <a href="https://praktikum.yandex.ru/" class="footer__link link link_color_black">Яндекс.Практикум</a>
+    </nav>
+    <div class="footer__sm-items">
+      <a href="https://github.com/withLoveAndSqualor" class="footer__sm-link link"><img class="footer__social-media-icon" src="../src/images/github.png"></a>
+      <a href="https://www.facebook.com/" class="footer__sm-link link"><img class="footer__social-media-icon" src="../src/images/facebook.png"></a>
+    </div>
+  </footer>
+  <script src="<%=htmlWebpackPlugin.files.js%>"></script>
 </body>
 </html>

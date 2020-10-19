@@ -1,0 +1,5 @@
+@media screen and (max-width: 1024px) {
+  .technologies-section__logo-item_css {
+    grid-area: 2/2/3/3;
+  }
+}

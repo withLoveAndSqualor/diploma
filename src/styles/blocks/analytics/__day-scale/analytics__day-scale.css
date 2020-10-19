@@ -1,0 +1,13 @@
+.analytics__day-scale {
+  width: 100%;
+  max-width: 1112px;
+  display: flex;
+  align-items: center;
+  padding-left: 6px;
+}
+
+@media screen and (max-width: 768px) {
+  .analytics__day-scale {
+    max-width: 555px;
+  }
+}

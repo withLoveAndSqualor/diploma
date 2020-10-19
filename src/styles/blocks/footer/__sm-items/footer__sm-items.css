@@ -1,0 +1,18 @@
+.footer__sm-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__sm-items {
+    padding-left: 13.74%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer__sm-items {
+    padding-left: 0;
+    padding-top: 22px;
+    align-self: flex-end;
+  }
+}

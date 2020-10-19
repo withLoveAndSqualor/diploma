@@ -1,0 +1,26 @@
+@import url(./__arrow/commits__arrow_left.css);
+@import url(./__arrow/commits__arrow_right.css);
+@import url(./__author-ava/commits__author-ava.css);
+@import url(./__author-container/commits__author-container.css);
+@import url(./__author-email/commits__author-email.css);
+@import url(./__author-info/commits__author-info.css);
+@import url(./__author-name/commits__author-name.css);
+@import url(./__card-link/commits__card-link.css);
+@import url(./__card/commits__card.css);
+@import url(./__commit-description/commits__commit-description.css);
+@import url(./__container/commits__container.css);
+@import url(./__date/commits__date.css);
+@import url(./__header-title/commits__header-title.css);
+@import url(./__paging-dots/commits__paging-dots.css);
+@import url(./__show-more-button/commits__show-more-button.css);
+
+.commits {
+  background-color: #f5f6f7;
+  max-width: 1440px;
+}
+
+@media screen and (max-width: 1024px) {
+  .commits {
+    overflow: hidden;
+  }
+}

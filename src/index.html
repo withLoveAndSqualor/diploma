@@ -3,52 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Поиск новостей и их анализ">
+  <meta name="author" content="Кожевникова Мария">
   <title>News Analyzer</title>
-  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
-  <link rel="shortcut icon" href="./images/A.png" type="image/png">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css%>">
+  <!--<link rel="stylesheet" href="./styles/index.css">-->
+  <link rel="apple-touch-icon" sizes="180x180" href="../src/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../src/images/favicon//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../src/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../src/images/favicon/site.webmanifest">
 </head>
-<body>
-  <main class="search">
-    <header class="header">
-      <div class="logo"><a href="">NewsAnalyzer</a></div>
-      <div class="header__pages-switcher">
-        <a class="header__page-link header__page-link_active" href="">Главная</a>
-        <a class="header__page-link" href="">О проекте</a>
-      </div>
+<body class="page">
+  <div class="background-container">
+    <header class="header header_underline_on-dark section_instrumental">
+      <div class="logo"><a class="link link_color_white" href="#" >NewsAnalyzer</a></div>
+      <nav class="header__pages-switcher">
+        <div class="header__page-link header__page-link_active-white"><a class="link link_color_white" href="#">Главная</a></div>
+        <div class="header__page-link"><a class="link link_color_grey" href="./about.html" target="_blank">О&nbsp;проекте</a></div>
+      </nav>
     </header>
-    <div class="separator"></div>
-    <section class="search-section">
-      <h1 class="search-section__title title">Что в мире творится?</h1>
-      <p class="search-section__paragraph paragraph ">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
-      <div class="search-field">
-        <input class="search-field__input" type="text">
-        <button class="search-field__button">Искать</button>
-      </div>
-    </section>
-    <div class="preloader-container">
-      <i class="circle-preloader"></i>
+    <section class="search-section section_main">
+      <div class="search-section__container">
+        <h1 class="search-section__title title_60px">Что в мире творится?</h1>
+        <p class="search-section__paragraph paragraph ">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
+        <form class="search-field">
+          <input class="search-field__input" type="search" placeholder="Введите тему новости">
+          <button class="search-field__button">Искать</button>
+        </form>
     </div>
-    <section class="about-author">
-      <img class="about-author__photo"></img>
-      <div class="about-author__text">
-        <h2 class="title_size_m about-author__title">Об авторе</h2>
-        <p class="paragraph about-author__pararaph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.
-          Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
-      </div>
     </section>
-  </main>
-  <footer>
-    <div class="footer__copyright"></div>
+  </div>
+  <section class="preloader section_main">
+      <i class="preloader__circle"></i>
+      <p class="preloader__text">Идет поиск новостей...</p>
+  </section>
+  <section class="not-found-section section_main">
+    <img src="../src/images/not-found_v1.png" alt="Расстроенная лупа" class="not-found-section__image">
+    <h3 class="not-found-section__title">Ничего не найдено</h3>
+    <p class="not-found-section__paragraph">К сожалению по вашему запросу
+      ничего не найдено.</p>
+  </section>
+  <section class="search-results section_main section_side-padding-104px">
+    <div class="search-results__header">
+      <h2 class="search-results__header-title">Результаты поиска</h2>
+      <a href="./paper.html" class="search-results__analytics-link link link_color_black" target="_blank">Посмотреть аналитику&nbsp;&#62</a>
+    </div>
+    <div class="search-results__container">
+      <div class="search-results__item">
+        <img src="../src/images/image_08.png" alt="Фото новости" class="search-results__photo">
+        <div class="search-results__text-container">
+          <p class="search-results__data">2 августа, 2019</p>
+          <h3 class="search-results__title">Национальное достояние – парки</h3>
+          <p class="search-results__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+          <p class="search-results__origin">Лента.ру</p>
+        </div>
+      </div>
+      <div class="search-results__item">
+        <img src="../src/images/image_04.png" alt="Фото новости" class="search-results__photo">
+        <div class="search-results__text-container">
+          <p class="search-results__data">2 августа, 2019</p>
+          <h3 class="search-results__title">Лесные огоньки: история одной фотографии</h3>
+          <p class="search-results__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного
+            из местных чудес природы.</p>
+          <p class="search-results__origin">Медуза</p>
+        </div>
+      </div>
+      <div class="search-results__item">
+        <img src="../src/images/image_07.png" alt="Фото новости" class="search-results__photo">
+        <div class="search-results__text-container">
+          <p class="search-results__data">2 августа, 2019</p>
+          <h3 class="search-results__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+          <p class="search-results__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+          <p class="search-results__origin">Риа</p>
+        </div>
+      </div>
+      <div class="search-results__item">
+        <img src="../src/images/image_06.png" alt="Фото новости" class="search-results__photo">
+        <div class="search-results__text-container">
+          <p class="search-results__data">2 августа, 2019</p>
+          <h3 class="search-results__title">Национальное достояние – парки</h3>
+          <p class="search-results__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+          <p class="search-results__origin">Дзен</p>
+        </div>
+      </div>
+      <div class="search-results__item">
+        <img src="../src/images/image_01.png" alt="Фото новости" class="search-results__photo">
+        <div class="search-results__text-container">
+          <p class="search-results__data">2 августа, 2019</p>
+          <h3 class="search-results__title">Лесные огоньки: история одной фотографии</h3>
+          <p class="search-results__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного
+            из местных чудес природы.</p>
+          <p class="search-results__origin">Афиша</p>
+        </div>
+      </div>
+      <div class="search-results__item">
+        <img src="../src/images/image_05.png" alt="Фото новости" class="search-results__photo">
+        <div class="search-results__text-container">
+          <p class="search-results__data">2 августа, 2019</p>
+          <h3 class="search-results__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+          <p class="search-results__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+          <p class="search-results__origin">Медиазона</p>
+        </div>
+      </div>
+    </div>
+    <button class="search-results__button" type="button">Показать&nbsp;еще</button>
+  </section>
+  <section class="about-author section_main section_side-padding-104px">
+      <div class="about-author__photo-container"><img class="about-author__photo" alt="Фото автора" src="../src/images/ansh-minchekar-dzYzrbF0HFE-unsplash.jpg"></div>
+      <div class="about-author__text">
+        <h2 class="title_40px about-author__title">Об авторе</h2>
+        <p class="paragraph about-author__paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
+        <p class="paragraph about-author__paragraph">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+    </div>
+  </section>
+  <footer class="footer section_instrumental">
+    <div class="footer__copyright">©2020  Mariia Kozhevnikova</div>
     <nav class="footer__link-menu">
-      <a href="" class="footer__link">Главная</a>
-      <a href="" class="footer__link">О проекте</a>
-      <a href="" class="footer__link">Яндекс.Практикум</a>
+      <a href="#" class="footer__link link link_color_black">Главная</a>
+      <a href="./about.html" class="footer__link link link_color_black" target="_blank">О&nbsp;проекте</a>
+      <a href="https://praktikum.yandex.ru/" class="footer__link link link_color_black">Яндекс.Практикум</a>
     </nav>
-    <div class="footer__social-media-items">
-      <a href="" class="footer__social-media-icon"></a>
-      <a href="" class="footer__social-media-icon"></a>
+    <div class="footer__sm-items">
+      <a href="https://github.com/withLoveAndSqualor" class="footer__sm-link link"><img class="footer__social-media-icon" src="../src/images/github.png"></a>
+      <a href="https://www.facebook.com/" class="footer__sm-link link"><img class="footer__social-media-icon" src="../src/images/facebook.png"></a>
     </div>
   </footer>
-  <script src="<%= htmlWebpackPlugin.files.js %>"></script>
+  <script src="<%=htmlWebpackPlugin.files.js%>"></script>
 </body>
 </html>

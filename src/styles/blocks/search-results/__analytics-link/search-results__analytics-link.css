@@ -1,0 +1,13 @@
+.search-results__analytics-link {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 600px) {
+  .search-results__analytics-link {
+    display: none;
+  }
+}

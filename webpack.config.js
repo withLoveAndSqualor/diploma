@@ -19,35 +19,77 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.js$/i,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+            plugins: ["@babel/plugin-proposal-class-properties"],
+          }
         }
       },
       {
-        test: /\.css$/i,
+        test: /\.css$/,
         use: [
-          (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: '../',
+            },
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 2
+            },
+          },
+          'postcss-loader'
+
+          /*(isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
           {loader: 'css-loader',
           options: {
             importLoaders: 2
             }
           },
-          'postcss-loader'
+          'postcss-loader'*/
         ]
       },
       {
-        test: /\.(png|jpg|jpeg|gif|ico|svg)$/,
+        test: /\.(png|jpg|jpeg|gif|ico|svg)$/i,
         use: [
-          'file-loader?name=./images/[name].[ext]',
-          /*{
+          //'file-loader?name=./images/[name].[ext]',
+          {
+            loader: 'file-loader',
+            options: {
+              esModule: false,
+              name: './images/[name].[ext]',
+            },
+          },
+          {
             loader: 'image-webpack-loader',
             options: {
-              esModule: false
+              esModule: false,
+              mozjpeg: {
+                progressive: true,
+                quality: 65
+              },
+              optipng: {
+                enabled: false,
+              },
+              pngquant: {
+                quality: [0.65, 0.90],
+                speed: 4
+              },
+              gifsicle: {
+                interlaced: false,
+              },
+              webp: {
+                quality: 75
+              }
             }
-          },*/
-        ]
+          },
+        ],
       },
       {
         test: /\.(eot|ttf|woff|woff2)$/,
@@ -73,7 +115,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: false,
       template: './src/index.html',
-      chunks: ['index'],
+      chunks: ['main'],
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
@@ -91,6 +133,6 @@ module.exports = {
     new webpack.DefinePlugin({
       'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
     }),
-    new WebpackMd5Hash()
+    new WebpackMd5Hash(),
   ]
 }
