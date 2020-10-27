@@ -1,0 +1,7 @@
+@import url(./__paragraph/for-clients__paragraph.css);
+@import url(./__text-container/for-clients__text-container.css);
+
+.for-clients {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,12 @@
+@import url(./_underline/header_underline_on-dark.css);
+@import url(./_underline/header_underline_on-white.css);
+@import url(./__pages-switcher/header__pages-switcher.css);
+@import url(./__page-link/header__page-link.css);
+
+.header {
+  display: flex;
+  max-width: 1440px;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+}

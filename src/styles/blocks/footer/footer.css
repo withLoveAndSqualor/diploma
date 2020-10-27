@@ -1,0 +1,33 @@
+@import url(./__copyright/footer__copyright.css);
+@import url(./__link-menu/footer__link-menu.css);
+@import url(./__link/footer__link.css);
+@import url(./__sm-items/footer__sm-items.css);
+@import url(./__sm-link/footer__sm-link.css);
+@import url(./__social-media-icon/footer__social-media-icon.css);
+
+.footer {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  height: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    max-height: 64px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    min-height: 224px;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+}

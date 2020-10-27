@@ -1,0 +1,4 @@
+.commits__author-info {
+  display: flex;
+  flex-direction: column;
+}

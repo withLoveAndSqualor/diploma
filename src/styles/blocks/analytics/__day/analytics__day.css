@@ -1,0 +1,24 @@
+.analytics__day {
+  display: flex;
+  padding-bottom: 56px;
+}
+
+@media screen and (max-width: 600px) {
+  .analytics__day {
+    padding-bottom: 24px;
+  }
+}
+
+.analytics__day:first-child {
+  padding-top: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  .analytics__day:first-child {
+    padding-bottom: 18px;
+  }
+}
+
+.analytics__day:last-of-type {
+  padding-bottom: 0;
+}

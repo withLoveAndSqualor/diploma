@@ -1,0 +1,21 @@
+@import url(./__analytics-link/search-results__analytics-link.css);
+@import url(./__button/search-results__button.css);
+@import url(./__container/search-results__container.css);
+@import url(./__data/search-results__data.css);
+@import url(./__header-title/search-results__header-title.css);
+@import url(./__header/search-results__header.css);
+@import url(./__item/search-results__item.css);
+@import url(./__origin/search-results__origin.css);
+@import url(./__photo/search-results__photo.css);
+@import url(./__text-container/search-results__text-container.css);
+@import url(./__text/search-results__text.css);
+@import url(./__title/search-results__title.css);
+
+.search-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+  color: #1A1B22;
+  background-color: #f5f6f7;
+}

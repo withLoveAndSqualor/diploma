@@ -1,0 +1,11 @@
+.commits__arrow_left {
+  position: absolute;
+  left: -80px;
+  top: calc(50% - 20px)
+}
+
+@media screen and (max-width: 850px) {
+  .commits__arrow_left {
+    display: none;
+  }
+}

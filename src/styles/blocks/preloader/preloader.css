@@ -1,0 +1,16 @@
+@import url(./__circle/preloader__circle.css);
+@import url(./__text/preloader__text.css);
+
+.preloader {
+  margin: 0;
+  max-height: 282px;
+  max-width: 1440px;
+  background-color: #f5f6f7;
+  /*overflow: hidden;*/
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}

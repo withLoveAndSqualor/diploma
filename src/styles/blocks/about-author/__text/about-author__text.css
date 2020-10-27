@@ -1,0 +1,17 @@
+.about-author__text {
+  max-width: 600px;
+  min-width: 424px;
+}
+
+@media screen and (max-width: 768px) {
+  .about-author__text {
+    max-width: 424px;
+    min-width: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-author__text {
+    min-width: 288px;
+  }
+}

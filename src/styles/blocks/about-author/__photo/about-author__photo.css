@@ -1,0 +1,8 @@
+.about-author__photo {
+  /*object-fit: cover;*/
+  width: 100%;
+  /*max-height: 464px;*/
+  height: auto;
+  /*width: auto;*/
+  border-radius: 50%;
+}

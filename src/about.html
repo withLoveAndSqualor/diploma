@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Поиск новостей и их анализ">
+  <meta name="author" content="Кожевникова Мария">
+  <title>News Analyzer</title>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css%>">
+  <!--<link rel="stylesheet" href="./styles/index.css">-->
+  <link rel="apple-touch-icon" sizes="180x180" href="../src/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../src/images/favicon//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../src/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../src/images/favicon/site.webmanifest">
+</head>
+
+<body class="page">
+  <header class="header header_underline_on-white section_instrumental">
+    <div class="logo"><a class="link link_color_black" href="./index.html">NewsAnalyzer</a></div>
+    <nav class="header__pages-switcher">
+      <div class="header__page-link "><a class="link link_color_grey-on-white" href="./index.html">Главная</a></div>
+      <div class="header__page-link header__page-link_active-black"><a class="link link_color_black"
+          href="#">О&nbsp;проекте</a></div>
+    </nav>
+  </header>
+  <section class="for-clients section_main section_side-padding-104px">
+    <h1 class="for-clients__title title_40px">Клиентам</h1>
+    <div class="for-clients__text-container">
+      <p class="for-clients__paragraph paragraph">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель —
+        показать, чему научился студент, какими технологиями владеет.</p>
+      <p class="for-clients__paragraph paragraph"> Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и
+        масштабируемым. Кроме того, добавлять новые страницы и функциональность проще и быстрее, чем в проектах,
+        выполненных по другим методологиям. Также сайт проще и дешевле поддерживать.</p>
+      <p class="for-clients__paragraph paragraph">Карточки с новостями приходят с сервера и обрабатываются асинхронно.
+        То есть сайт продолжает работать, пока от сервера приходит ответ. Это повышает удобство использования сервиса.
+      </p>
+      <p class="for-clients__paragraph paragraph">При создании проекта была использована сборка технологией Webpack. Это
+        современный подход к разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает
+        в старых браузерах. Даже если посетители — пользователи старых операционных систем, у них не будет проблем с
+        отображением. А значит, потенциальная аудитория возрастает.</p>
+      <p class="for-clients__paragraph paragraph">Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу
+        нужен сайт, мы рекомендуем обратиться к этому студенту.</p>
+    </div>
+  </section>
+  <section class="technologies-section section_main section_side-padding-104px">
+    <div class="technologies-section__title-container">
+      <h2 class="technologies-section__title title_40px">Используемые
+        технологии</h2>
+    </div>
+    <div class="technologies-section__logo-container">
+      <p class="technologies-section__t-name ">HTML</p>
+      <p class="technologies-section__t-name">CSS</p>
+      <p class="technologies-section__t-name">Java Script</p>
+      <p class="technologies-section__t-name">Webpack</p>
+      <div class="technologies-section__logo-item technologies-section__logo-item_html">
+        <img src="../src/images/html-logo.png" alt="Логотип HTML" class="technologies-section__image">
+      </div>
+      <div class="technologies-section__logo-item technologies-section__logo-item_css">
+        <img src="../src/images/css-logo.png" alt="Логотип CSS" class="technologies-section__image">
+      </div>
+      <div class="technologies-section__logo-item"><img src="../src/images/js.png" alt="Логотип JS"
+          class="technologies-section__image">
+      </div>
+      <div class="technologies-section__logo-item"><img src="../src/images/Group.png" alt="Логотип Webpack"
+          class="technologies-section__image">
+      </div>
+    </div>
+  </section>
+  <section class="about-author section_main section_side-padding-104px">
+    <div class="about-author__photo-container"><img class="about-author__photo" alt="Фото автора"
+        src="./images/ansh-minchekar-dzYzrbF0HFE-unsplash.jpg"></div>
+    <div class="about-author__text">
+      <h2 class="title_40px about-author__title">Об авторе</h2>
+      <p class="paragraph about-author__paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас
+        зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
+      <p class="paragraph about-author__paragraph">Также можно рассказать о процессе обучения в Практикуме, чему вы тут
+        научились, и чем можете помочь потенциальным заказчикам.</p>
+    </div>
+  </section>
+  <section class="commits section_main section_side-padding-104px">
+    <div class="search-results__header">
+      <h2 class="search-results__header-title commits__header-title">История коммитов из GitHub</h2>
+      <a href="https://github.com/withLoveAndSqualor"
+        class="search-results__analytics-link link link_color_black">Открыть в Github&nbsp;&#62</a>
+    </div>
+    <div class="commits__container">
+      <img src="../src/images/slider-control-left.svg" alt="стрелка влево" class="commits__arrow_left">
+      <img src="../src/images/slider-control-right.svg" alt="стрелка вправо" class="commits__arrow_right">
+      <div class="commits__card">
+        <a href="https://github.com/withLoveAndSqualor" class="commits__card-link link">
+          <p class="commits__date">14 августа, 2019</p>
+          <div class="commits__author-container">
+            <img src="../src/images/commit-ava.png" alt="Аватарка автора коммита" class="commits__author-ava">
+            <div class="commits__author-info">
+              <p class="commits__author-name">Антон Долинин</p>
+              <p class="commits__author-email">anton@yandex.ru</p>
+            </div>
+          </div>
+          <p class="commits__commit-description">Emmet (formerly Zen Coding) is a web-developer’s toolkit that can
+            greatly improve your HTML & CSS workflow.</p>
+        </a>
+      </div>
+      <div class="commits__card">
+        <a href="https://github.com/withLoveAndSqualor" class="commits__card-link link">
+          <p class="commits__date">14 августа, 2019</p>
+          <div class="commits__author-container">
+            <img src="../src/images/commit-ava.png" alt="Аватарка автора коммита" class="commits__author-ava">
+            <div class="commits__author-info">
+              <p class="commits__author-name">Антон Долинин</p>
+              <p class="commits__author-email">anton@yandex.ru</p>
+            </div>
+          </div>
+          <p class="commits__commit-description">Emmet (formerly Zen Coding) is a web-developer’s toolkit that can
+            greatly improve your HTML & CSS workflow.</p>
+        </a>
+      </div>
+      <div class="commits__card">
+        <a href="https://github.com/withLoveAndSqualor" class="commits__card-link link">
+          <p class="commits__date">14 августа, 2019</p>
+          <div class="commits__author-container">
+            <img src="../src/images/commit-ava.png" alt="Аватарка автора коммита" class="commits__author-ava">
+            <div class="commits__author-info">
+              <p class="commits__author-name">Антон Долинин</p>
+              <p class="commits__author-email">anton@yandex.ru</p>
+            </div>
+          </div>
+          <p class="commits__commit-description">Emmet (formerly Zen Coding) is a web-developer’s toolkit that can
+            greatly improve your HTML & CSS workflow.</p>
+        </a>
+      </div>
+    </div>
+    <img src="../src/images/dots.png" alt="Точки отображают прокрутку коммитов" class="commits__paging-dots">
+    <a href="https://github.com/withLoveAndSqualor" class="commits__show-more-button link">Открыть в GitHub</a>
+  </section>
+  <footer class="footer section_instrumental">
+    <div class="footer__copyright">©2020 Mariia Kozhevnikova</div>
+    <nav class="footer__link-menu">
+      <a href="./index.html" class="footer__link link link_color_black">Главная</a>
+      <a href="./about.html" class="footer__link link link_color_black">О&nbsp;проекте</a>
+      <a href="https://praktikum.yandex.ru/" class="footer__link link link_color_black">Яндекс.Практикум</a>
+    </nav>
+    <div class="footer__sm-items">
+      <a href="https://github.com/withLoveAndSqualor" class="footer__sm-link link"><img
+          class="footer__social-media-icon" src="../src/images/github.png"></a>
+      <a href="https://www.facebook.com/" class="footer__sm-link link"><img class="footer__social-media-icon"
+          src="../src/images/facebook.png"></a>
+    </div>
+  </footer>
+  <script src="<%=htmlWebpackPlugin.files.js%>"></script>
+</body>
+
+</html>

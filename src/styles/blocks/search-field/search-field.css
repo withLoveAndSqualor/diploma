@@ -1,0 +1,29 @@
+@import url(./__input/search-field__input.css);
+@import url(./__button/search-field__button.css);
+
+.search-field {
+  position: relative;
+  max-width: 608px;
+  margin: 0 auto;
+  outline: none;
+}
+
+.search-field:focus, .search-field:active {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 768px) {
+  .search-field {
+    max-width: 448px;
+    margin: 0;
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .search-field {
+    padding-bottom: 2px;
+  }
+}

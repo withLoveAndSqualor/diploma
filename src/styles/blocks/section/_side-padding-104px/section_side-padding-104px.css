@@ -1,0 +1,25 @@
+.section_side-padding-104px {
+  padding-left: 104px;
+  padding-right: 104px;
+}
+
+@media screen and (max-width: 850px) {
+  .section_side-padding-104px {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+/*@media screen and (max-width: 600px) {
+  .section_side-padding-104px {
+    padding-left: 5%;
+    padding-right: 5%;
+ }
+}*/
+
+@media screen and (max-width:600px) {
+  .section_side-padding-104px {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

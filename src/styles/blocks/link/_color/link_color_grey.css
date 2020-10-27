@@ -1,0 +1,7 @@
+.link_color_grey {
+  color: #b6bcbf;
+}
+
+.link_color_grey:hover {
+  color: #ffffff;
+}

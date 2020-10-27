@@ -1,0 +1,33 @@
+.analytics__scale {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #b6bcbf;
+  display: flex;
+  margin-left: 104px;
+  margin-top: 16px;
+  position: relative;
+  height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .analytics__scale {
+    margin-left: 117px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .analytics__scale {
+    margin-left: 80px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .analytics__scale {
+    display: none;
+  }
+}

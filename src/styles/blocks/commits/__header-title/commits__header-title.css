@@ -1,0 +1,9 @@
+.commits__header-title {
+  max-width: 712px;
+}
+
+@media screen and (max-width: 1024px) {
+  .commits__header-title {
+    max-width: 336px;
+  }
+}

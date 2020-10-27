@@ -1,0 +1,11 @@
+.not-found-section__title {
+  padding-top: 40px;
+  margin: 0;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 1;
+  font-size: 26px;
+  line-height: 30px;
+  color: #1a1b22;
+  max-width: 356px;
+}

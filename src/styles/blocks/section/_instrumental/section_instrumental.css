@@ -1,0 +1,18 @@
+.section_instrumental {
+  padding-left: 7.22%;
+  padding-right: 7.01%;
+}
+
+@media screen and (max-width: 768px) {
+  .section_instrumental {
+    padding-left: 5.33%;
+    padding-right: 5.59%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .section_instrumental {
+    padding-left: 16px;
+    padding-right: 18px;
+  }
+}
