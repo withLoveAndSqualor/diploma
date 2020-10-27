@@ -26,8 +26,8 @@
       <div class="search-section__container">
         <h1 class="search-section__title title_60px">Что в мире творится?</h1>
         <p class="search-section__paragraph paragraph ">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
-        <form class="search-field">
-          <input class="search-field__input" type="search" placeholder="Введите тему новости">
+        <form class="search-field" name="searching-news">
+          <input class="search-field__input" type="search" placeholder="Введите тему новости" required>
           <button class="search-field__button">Искать</button>
         </form>
     </div>
@@ -35,7 +35,7 @@
   </div>
   <section class="preloader section_main">
       <i class="preloader__circle"></i>
-      <p class="preloader__text">Идет поиск новостей...</p>
+      <h2 class="preloader__text">Идет поиск новостей...</h2>
   </section>
   <section class="not-found-section section_main">
     <img src="../src/images/not-found_v1.png" alt="Расстроенная лупа" class="not-found-section__image">
@@ -46,7 +46,7 @@
   <section class="search-results section_main section_side-padding-104px">
     <div class="search-results__header">
       <h2 class="search-results__header-title">Результаты поиска</h2>
-      <a href="./paper.html" class="search-results__analytics-link link link_color_black" target="_blank">Посмотреть аналитику&nbsp;&#62</a>
+      <a href="./paper.html" class="search-results__analytics-link link link_color_black" target="_blank">Посмотреть аналитику&nbsp;&#62;</a>
     </div>
     <div class="search-results__container">
       <div class="search-results__item">
@@ -124,8 +124,8 @@
       <a href="https://praktikum.yandex.ru/" class="footer__link link link_color_black">Яндекс.Практикум</a>
     </nav>
     <div class="footer__sm-items">
-      <a href="https://github.com/withLoveAndSqualor" class="footer__sm-link link"><img class="footer__social-media-icon" src="../src/images/github.png"></a>
-      <a href="https://www.facebook.com/" class="footer__sm-link link"><img class="footer__social-media-icon" src="../src/images/facebook.png"></a>
+      <a href="https://github.com/withLoveAndSqualor" class="footer__sm-link link"><img class="footer__social-media-icon" src="../src/images/github.png" alt="Иконка Гитхаба"></a>
+      <a href="https://www.facebook.com/" class="footer__sm-link link"><img class="footer__social-media-icon" src="../src/images/facebook.png" alt="Иконка Фэйсбука"></a>
     </div>
   </footer>
   <script src="<%=htmlWebpackPlugin.files.js%>"></script>
