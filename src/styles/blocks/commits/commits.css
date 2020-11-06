@@ -17,10 +17,11 @@
 .commits {
   background-color: #f5f6f7;
   max-width: 1440px;
+  overflow: hidden;
+
 }
 
-@media screen and (max-width: 1024px) {
+/*@media screen and (max-width: 1024px) {
   .commits {
-    overflow: hidden;
-  }
-}
+
+}*/

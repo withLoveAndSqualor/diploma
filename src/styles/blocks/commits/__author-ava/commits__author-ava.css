@@ -1,8 +1,10 @@
 .commits__author-ava {
-  padding-right: 16px;
+  margin-right: 16px;
   max-width: 64px;
-  height: 100%;
+  max-height: 64px;
+  height: auto;
   object-fit: cover;
+  border-radius: 75%;
 }
 
 @media screen and (max-width: 1024px) {

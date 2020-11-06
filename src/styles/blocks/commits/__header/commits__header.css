@@ -1,0 +1,22 @@
+.commits__header {
+padding-left: 104px;
+padding-right: 104px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+@media screen and (max-width: 850px) {
+  .commits__header {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .commits__header {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
