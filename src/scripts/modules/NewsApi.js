@@ -1,6 +1,7 @@
 export class NewsApi {
   static apiKey = '97c321c4349f428aba6f530071cac80f';
-  constructor () {
+  constructor (errorSection) {
+    this.errorSection = errorSection;
     this.date = new Date();
     this.today = this._getToday(this.date);
     this.weekAgo = this._getWeekAgo(this.date);
@@ -31,6 +32,7 @@ export class NewsApi {
     })
     .then ((res) => {
       if (!res.ok) {
+        this.errorSection.style.display = 'flex';
         return Promise.reject(`Ошибка: ${res.status}`);
       } else {
         return res.json();

@@ -13,10 +13,12 @@ import {LocalStorage} from './modules/LocalStorage.js';
   const newsContainer = document.querySelector('.search-results__container');
   const newsListSection = document.querySelector('.search-results');
   const moreResultsButton = document.querySelector('.search-results__button');
+  const errorSection = document.querySelector('.error-section');
+  const searchButton = document.querySelector('.search-field__button');
 
 
   const searchInputCheck = new Validator(searchNewsInput);
-  const searchingRequest = new NewsApi();
+  const searchingRequest = new NewsApi(errorSection);
   const demandToLS = new LocalStorage();
   const newsListClass = new NewsList(newsListSection, newsContainer, newsCardFill);
 
@@ -28,50 +30,59 @@ import {LocalStorage} from './modules/LocalStorage.js';
 
   //поиск-запрос с прикрученными изменениями интерфейса и записью в лс
   function searching (input) {
+    //включаем прелоадер, очищаем инпут, блокируем кнопку и инпут, убираем старые результаты
     document.querySelector('.preloader').style.display = 'flex';
-    searchNewsInput.value = "";
+    newsListSection.style.display = 'none';
+    //searchNewsInput.value = "";
+    searchNewsInput.setAttribute("disabled", "true");
+    searchButton.setAttribute("disabled", "true");
+    //отправляем запрос
     searchingRequest.getNews(input)
     .then ( res => {
+      if(res.articles.length === '0'){
+        notFoundSection.style.display ='flex';
+        preloader.style.display = 'none';
+        searchNewsInput.removeAttribute("disabled");
+        searchButton.removeAttribute("disabled");
+      } else {
       demandToLS.saveNewsToLS(res);
       preloader.style.display = 'none';
-      console.log(res.totalResults);
-      if(res.articles.length = 0){
-        notFoundSection.style.display ='flex';
       }
     })
     .then (() => {
       newsListClass.render(Array.from(demandToLS.getNewsFromLS().articles));
+      searchNewsInput.removeAttribute("disabled");
+      searchButton.removeAttribute("disabled");
+      searchNewsInput.setCustomValidity('');
+      searchNewsInput.reportValidity();
     })
     .catch ((err) => {
       console.log(err);
+      errorSection.style.display = 'flex';
+      preloader.style.display = 'none';
+      searchButton.removeAttribute("disabled");
     });
   }
 
-  searchNewsInput.addEventListener('focus', () => {
-    searchNewsInput.setCustomValidity('');
-    searchNewsInput.reportValidity();
-  }
-  )
 
   //по сабмиту отпраляет на валидацию, если ок - поиск-запрос и распределение данных из поиск-запроса
     searchNewsForm.addEventListener('submit', (event) => {
     event.preventDefault();
-
     notFoundSection.style.display ='none';
+    errorSection.style.display = 'none';
     searchInputCheck.checkInputValidity()
 
     if (searchInputCheck.checkInputValidity()){
       localStorage.setItem('searchedWord', searchNewsInput.value);
       newsContainer.innerHTML = '';
-      console.log(newsContainer);
       const input = localStorage.getItem('searchedWord');
-      console.log(input);
       searching(input);
     } else {
       console.log('что-то пошло не так');
     }
   });
 
+  //слушатель на кнопку добавления новостей
   moreResultsButton.addEventListener('click', () => newsListClass.render(Array.from(demandToLS.getNewsFromLS().articles)))
 
 }());
