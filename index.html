@@ -6,12 +6,12 @@
   <meta name="description" content="Поиск новостей и их анализ">
   <meta name="author" content="Кожевникова Мария">
   <title>News Analyzer</title>
-  <link rel="stylesheet" href="./styles/main.c86394e135f4bbb9c532.css">
+  <link rel="stylesheet" href="./styles/main.0dcbdde5d9e96c610197.css">
   <!--<link rel="stylesheet" href="./styles/index.css">-->
-  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="./images/favicon/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="../src/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../src/images/favicon//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../src/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../src/images/favicon/site.webmanifest">
 </head>
 <body class="page">
   <div class="background-container">
@@ -26,16 +26,16 @@
       <div class="search-section__container">
         <h1 class="search-section__title title_60px">Что в мире творится?</h1>
         <p class="search-section__paragraph paragraph ">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
-        <form class="search-field">
-          <input class="search-field__input" type="search" placeholder="Введите тему новости">
-          <button class="search-field__button">Искать</button>
+        <form class="search-field" name="search" novalidate>
+          <input class="search-field__input" type="search" placeholder="Введите тему новости" name="search__input" required>
+          <button type="submit" class="search-field__button">Искать</button>
         </form>
-    </div>
+      </div>
     </section>
   </div>
   <section class="preloader section_main">
       <i class="preloader__circle"></i>
-      <p class="preloader__text">Идет поиск новостей...</p>
+      <h2 class="preloader__text">Идет поиск новостей...</h2>
   </section>
   <section class="not-found-section section_main">
     <img src="../src/images/not-found_v1.png" alt="Расстроенная лупа" class="not-found-section__image">
@@ -46,70 +46,14 @@
   <section class="search-results section_main section_side-padding-104px">
     <div class="search-results__header">
       <h2 class="search-results__header-title">Результаты поиска</h2>
-      <a href="./paper.html" class="search-results__analytics-link link link_color_black" target="_blank">Посмотреть аналитику&nbsp;&#62</a>
+      <a href="./paper.html" class="search-results__analytics-link link link_color_black" target="_blank">Посмотреть аналитику&nbsp;&#62;</a>
     </div>
     <div class="search-results__container">
-      <div class="search-results__item">
-        <img src="../src/images/image_08.png" alt="Фото новости" class="search-results__photo">
-        <div class="search-results__text-container">
-          <p class="search-results__data">2 августа, 2019</p>
-          <h3 class="search-results__title">Национальное достояние – парки</h3>
-          <p class="search-results__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-          <p class="search-results__origin">Лента.ру</p>
-        </div>
-      </div>
-      <div class="search-results__item">
-        <img src="../src/images/image_04.png" alt="Фото новости" class="search-results__photo">
-        <div class="search-results__text-container">
-          <p class="search-results__data">2 августа, 2019</p>
-          <h3 class="search-results__title">Лесные огоньки: история одной фотографии</h3>
-          <p class="search-results__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного
-            из местных чудес природы.</p>
-          <p class="search-results__origin">Медуза</p>
-        </div>
-      </div>
-      <div class="search-results__item">
-        <img src="../src/images/image_07.png" alt="Фото новости" class="search-results__photo">
-        <div class="search-results__text-container">
-          <p class="search-results__data">2 августа, 2019</p>
-          <h3 class="search-results__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-          <p class="search-results__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-          <p class="search-results__origin">Риа</p>
-        </div>
-      </div>
-      <div class="search-results__item">
-        <img src="../src/images/image_06.png" alt="Фото новости" class="search-results__photo">
-        <div class="search-results__text-container">
-          <p class="search-results__data">2 августа, 2019</p>
-          <h3 class="search-results__title">Национальное достояние – парки</h3>
-          <p class="search-results__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-          <p class="search-results__origin">Дзен</p>
-        </div>
-      </div>
-      <div class="search-results__item">
-        <img src="../src/images/image_01.png" alt="Фото новости" class="search-results__photo">
-        <div class="search-results__text-container">
-          <p class="search-results__data">2 августа, 2019</p>
-          <h3 class="search-results__title">Лесные огоньки: история одной фотографии</h3>
-          <p class="search-results__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного
-            из местных чудес природы.</p>
-          <p class="search-results__origin">Афиша</p>
-        </div>
-      </div>
-      <div class="search-results__item">
-        <img src="../src/images/image_05.png" alt="Фото новости" class="search-results__photo">
-        <div class="search-results__text-container">
-          <p class="search-results__data">2 августа, 2019</p>
-          <h3 class="search-results__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-          <p class="search-results__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-          <p class="search-results__origin">Медиазона</p>
-        </div>
-      </div>
     </div>
     <button class="search-results__button" type="button">Показать&nbsp;еще</button>
   </section>
   <section class="about-author section_main section_side-padding-104px">
-      <div class="about-author__photo-container"><img class="about-author__photo" alt="Фото автора" src="./images/ansh-minchekar-dzYzrbF0HFE-unsplash.jpg"></div>
+      <div class="about-author__photo-container"><img class="about-author__photo" alt="Фото автора" src="../src/images/ansh-minchekar-dzYzrbF0HFE-unsplash.jpg"></div>
       <div class="about-author__text">
         <h2 class="title_40px about-author__title">Об авторе</h2>
         <p class="paragraph about-author__paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
@@ -124,10 +68,10 @@
       <a href="https://praktikum.yandex.ru/" class="footer__link link link_color_black">Яндекс.Практикум</a>
     </nav>
     <div class="footer__sm-items">
-      <a href="https://github.com/withLoveAndSqualor" class="footer__sm-link link"><img class="footer__social-media-icon" src="./images/github.png"></a>
-      <a href="https://www.facebook.com/" class="footer__sm-link link"><img class="footer__social-media-icon" src="./images/facebook.png"></a>
+      <a href="https://github.com/withLoveAndSqualor" class="footer__sm-link link"><img class="footer__social-media-icon" src="../src/images/github.png" alt="Иконка Гитхаба"></a>
+      <a href="https://www.facebook.com/" class="footer__sm-link link"><img class="footer__social-media-icon" src="../src/images/facebook.png" alt="Иконка Фэйсбука"></a>
     </div>
   </footer>
-  <script src="./scripts/main.080a1e3ddf9b72cac162.js"></script>
+  <script src="./scripts/main.6f60e27c593686b264c2.js"></script>
 </body>
 </html>
