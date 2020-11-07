@@ -3,6 +3,7 @@ export class NewsList  {
     this.section = section;
     this.container = container;
     this.newsCardFill = newsCardFill;
+    this.counter = 0;
   }
 
   addCard (item){
@@ -12,6 +13,9 @@ export class NewsList  {
   }
 
   render(newsArray) {
-    newsArray.forEach(item => this.addCard(item));
+    const newsToRender = newsArray.slice(this.counter, this.counter + 3);
+    console.log (newsToRender);
+    newsToRender.forEach(item => this.addCard(item));
+    return this.counter = this.counter + 3;
   }
 };

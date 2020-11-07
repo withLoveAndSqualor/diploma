@@ -12,6 +12,7 @@ import {LocalStorage} from './modules/LocalStorage.js';
   const notFoundSection = document.querySelector('.not-found-section');
   const newsContainer = document.querySelector('.search-results__container');
   const newsListSection = document.querySelector('.search-results');
+  const moreResultsButton = document.querySelector('.search-results__button');
 
 
   const searchInputCheck = new Validator(searchNewsInput);
@@ -70,5 +71,7 @@ import {LocalStorage} from './modules/LocalStorage.js';
       console.log('что-то пошло не так');
     }
   });
+
+  moreResultsButton.addEventListener('click', () => newsListClass.render(Array.from(demandToLS.getNewsFromLS().articles)))
 
 }());
