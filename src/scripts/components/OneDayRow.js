@@ -5,22 +5,22 @@ export class OneDayRow {
     <div class="analytics__day-scale"><span class="analytics__day-amount">0</span></div>
   </div>`
 
-  constructor (data) {
+  constructor(data) {
     this.data = data;
-    this.date = new Date (this.data[0].publishedAt);
+    this.date = new Date(this.data[0].publishedAt);
   }
 
-  _getDate () {
+  _getDate() {
     return this.date.getDate();
   }
 
-  _getDayOfWeek () {
+  _getDayOfWeek() {
     const day = this.date.getDay();
     const days = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
     return days[day];
   }
 
-  create () {
+  create() {
     const element = document.createElement('div');
     element.insertAdjacentHTML('beforeend', OneDayRow.markup);
 
@@ -28,10 +28,8 @@ export class OneDayRow {
     const dayOfWeek = this._getDayOfWeek();
 
     element.querySelector('.analytics__day-date').textContent = `${date}, ${dayOfWeek}`;
-    console.log(element.querySelector('.analytics__day-amount'));
     element.querySelector('.analytics__day-amount').textContent = `${this.data.length}`;
     element.querySelector('.analytics__day-scale').style.background = `linear-gradient(to right, #2F71E5 ${this.data.length}%, transparent ${this.data.length}% 100%)`;
-
 
     this.day = element.firstElementChild;
     return this.day;

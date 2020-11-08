@@ -1,6 +1,7 @@
 export class NewsApi {
-  static apiKey = '97c321c4349f428aba6f530071cac80f';
-  constructor (errorSection) {
+
+  constructor (apiKey, errorSection) {
+    this.apiKey = apiKey;
     this.errorSection = errorSection;
     this.date = new Date();
     this.today = this._getToday(this.date);
@@ -27,7 +28,7 @@ export class NewsApi {
     return fetch(`https://newsapi.org/v2/everything?language=ru&q=${searchedWord}&from=${this.weekAgo}&to=${this.today}`, {
       method: 'GET',
       headers: {
-        authorization: `${NewsApi.apiKey}`
+        authorization: `${this.apiKey}`
       }
     })
     .then ((res) => {

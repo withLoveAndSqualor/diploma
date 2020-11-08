@@ -2,14 +2,14 @@ export class LocalStorage {
   constructor () {
   }
 
-  saveNewsToLS (news) {
-    localStorage.setItem(`news`, JSON.stringify(news))
+  saveToLS (data, name) {
+    localStorage.setItem(`${name}`, JSON.stringify(data))
   }
 
-  getNewsFromLS () {
-    const raw = localStorage.getItem('news');
-    const news = JSON.parse(raw);
-    return news;
+  getFromLS (name) {
+    const raw = localStorage.getItem(`${name}`);
+    const data = JSON.parse(raw);
+    return data;
   }
 
   clear () {

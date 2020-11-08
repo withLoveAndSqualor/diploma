@@ -1,13 +1,13 @@
 
 export class GitHubApi {
-  static owner = 'withLoveAndSqualor';
-  static repo = 'diploma';
 
-  constructor () {
+  constructor (owner, repo) {
+    this.owner = owner;
+    this.repo = repo;
   }
 
   getCommits() {
-    return fetch(`https://api.github.com/repos/${GitHubApi.owner}/${GitHubApi.repo}/commits`, {
+    return fetch(`https://api.github.com/repos/${this.owner}/${this.repo}/commits`, {
       method: 'GET'
     })
     .then ((res) => {
