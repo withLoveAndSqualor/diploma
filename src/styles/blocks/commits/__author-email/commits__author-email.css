@@ -6,4 +6,5 @@
   line-height: 22px;
   color: #1a1b22;
   margin: 0;
+  word-wrap: break-word;
 }

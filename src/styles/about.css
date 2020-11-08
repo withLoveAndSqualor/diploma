@@ -16,4 +16,8 @@
 @import url(./blocks/for-clients/for-clients.css);
 @import url(./blocks/technologies-section/technologies-section.css);
 @import url(./blocks/commits/commits.css);
+@import url(./blocks/swiper-container/swiper-container.css);
+@import url(./blocks/commits/__header/commits__header.css);
+
+/*@import url(../../node_modules/swiper/swiper-bundle.css);*/
 

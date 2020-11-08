@@ -1,20 +1,23 @@
 .commits__card {
-  max-width: 400px;
-  max-height: 288px;
+  /*width: 100%;
+  min-width: 336px;
+  max-height: 288px;*/
   background: #ffffff;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
   padding: 24px;
   box-sizing: border-box;
+
+
 }
 
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
   .commits__card {
     max-width: 336px;
     min-width: 288px;
   }
-}
+}*/
 
 @media screen and (max-width: 768px) {
   .commits__card {
@@ -22,6 +25,6 @@
   }
 }
 
-.commits__card:not(:last-child) {
+/*.commits__card:not(:last-child) {
   margin-right: 16px;
-}
+}*/

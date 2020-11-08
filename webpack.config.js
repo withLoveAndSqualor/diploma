@@ -10,12 +10,21 @@ module.exports = {
   entry: {
     main: './src/scripts/index.js',
     about: './src/scripts/about.js',
-    paper: './src/scripts/paper.js'
+    paper: './src/scripts/paper.js',
+    /*main: { import: './src/scripts/index.js', dependOn: 'shared' },
+    about: { import: './src/scripts/about.js', dependOn: 'shared' },
+    paper: { import: './src/scripts/paper.js', dependOn: 'shared' },
+    shared: 'lodash',*/
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: './scripts/[name].[chunkhash].js'
   },
+  /*optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
+  },*/
   module: {
     rules: [
       {

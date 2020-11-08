@@ -8,16 +8,17 @@
   max-width: 352px;
   margin: 0;
   padding-bottom: 18px;
+  display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /*white-space: nowrap;*/
+  flex: 1 2 auto;
 }
 
 @media screen and (max-width: 768px) {
   .search-results__text {
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    /*white-space: nowrap;*/
-    /*text-overflow: ellipsis;*/
     max-width: 192px;
     height: 88px;
     margin-bottom: 12px;

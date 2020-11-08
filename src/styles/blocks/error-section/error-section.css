@@ -1,7 +1,7 @@
-@import url(./__circle/preloader__circle.css);
-@import url(./__text/preloader__text.css);
+@import url(./__text/error-section__text.css);
 
-.preloader {
+
+.error-section {
   margin: 0;
   max-height: 282px;
   max-width: 1440px;

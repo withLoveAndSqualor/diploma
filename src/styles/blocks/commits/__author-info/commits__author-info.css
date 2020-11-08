@@ -1,4 +1,5 @@
 .commits__author-info {
   display: flex;
   flex-direction: column;
+  max-width: 352px;
 }

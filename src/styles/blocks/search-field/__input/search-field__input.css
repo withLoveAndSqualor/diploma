@@ -42,7 +42,7 @@
 .search-field__input:focus, .search-field__input:active {
   color: #1a1b22;
   padding-left: 24px;
-  background: #2F71E5;
+  /*background: #2F71E5;*/
 }
 
 .search-field__input:focus::-webkit-input-placeholder {
